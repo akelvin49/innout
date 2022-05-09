@@ -1,0 +1,279 @@
+body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 54px 1fr 45px;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar footer";
+    height: 100vh;
+    margin: 0;
+    background-color: #DDD;
+}
+
+body.hide-sidebar {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+}
+
+header.header {
+    grid-area: header;
+    display: flex;
+    background-color: #1976d2;
+    align-items: center;
+    z-index: 10;
+    box-shadow:
+        0 2px 4px -1px rgba(0, 0, 0, .2),
+        0 4px 4px 0px rgba(0, 0, 0, .14),
+        0 1px 10px 0px rgba(0, 0, 0, .12);
+}
+
+
+header.header .logo-a {
+    text-decoration: none;
+}
+
+header.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    flex-basis: 250px;
+    height: 100%;
+}
+
+header.header .menu-toggle {
+    color: white;
+    cursor: pointer;
+}
+
+header.header .spacer {
+    flex: 1;
+}
+
+header.header .dropdown {
+    position: relative;
+    height: 90%;
+    margin-right: 5px;
+}
+
+header.header .dropdown-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+header.header .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    background-color: #f9f9f9;
+    padding: 15px 0px;
+    z-index: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+}
+
+header.header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header.header .dropdown-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+header.header .dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #222;
+    min-width: 100%;
+}
+
+header.header .dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, .07);
+}
+
+
+header.header .dropdown:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+header.header .avatar {
+    border-radius: 50%;
+    margin: 0px;
+    height: 75%;
+}
+
+aside.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: sidebar;
+    box-shadow: -5px 0px 25px 1px rgba(0, 0, 0, .4);
+    background-color: #FFF;
+}
+
+aside.sidebar .menu {
+    width: 100%;
+    flex-grow: 1;
+}
+
+aside.sidebar .menu ul.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.sidebar .menu li.nav-item {
+    padding: 10px 10px 10px 25px;
+    margin: 0;
+}
+
+aside.sidebar .menu li.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+aside.sidebar .menu li.nav-item a {
+    font-size: 1.1rem;
+    color: #555;
+    text-decoration: none;
+}
+
+body.hide-sidebar aside.sidebar {
+    display: none;
+}
+
+aside.sidebar .sidebar-widgets {
+    position: sticky;
+    bottom: 20px;
+}
+
+aside.sidebar .sidebar-widget .icon {
+    font-size: 3rem;
+    margin: 2px 10px 2px 0px;
+}
+
+aside.sidebar .sidebar-widget .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+aside.sidebar .info .main {
+    font-size: 1.8rem;
+}
+
+.division {
+    width: 80%;
+    border: solid 1px #EEE;
+}
+
+aside.sidebar .sidebar-widget {
+    display: flex;
+    align-items: center;
+}
+
+main.content {
+    background-color: #FFF;
+    grid-area: content;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .2);
+}
+
+main.content .content-title {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 12px 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+main.content .content-title .icon {
+    font-size: 3rem;
+}
+
+main.content .content-title h1 {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+main.content .content-title h2 {
+    color: #777;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+main.content .card {
+    margin-top: -7px;
+}
+
+main.content .card h3 {
+    font-size: 1.4rem;
+}
+
+main.content .card-body {
+    padding: 0px 0px 0px 30px;
+}
+
+footer.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    grid-area: footer;
+    background-color: #222;
+    color: #FFF;
+}
+
+.record {
+    font-size: 1.4rem;
+}
+
+.summary-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.summary-box {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.summary-box .icon {
+    font-size: 3.5rem;
+}
+
+.summary-box .title {
+    font-size: 1.5rem;
+}
+
+.summary-box .value {
+    font-size: 2rem;
+}
