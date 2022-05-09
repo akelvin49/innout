@@ -6,9 +6,11 @@ setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'portuguese');
 // Constantes gerais
 define('DAILY_TIME', 60 * 60 * 8);
 
-// Pastas
+// URL
 define('INDEX_URL_GET_', '/projetos/innout/public/'); // com a barra no final
 define('INDEX_URL_GET', '/projetos/innout/public');
+
+// Pastas
 define('MODEL_PATH', realpath(dirname(__FILE__) . '/../models'));
 define('VIEW_PATH', realpath(dirname(__FILE__) . '/../views'));
 define('TEMPLATE_PATH', realpath(dirname(__FILE__) . '/../views/templates'));
