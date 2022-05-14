@@ -11,11 +11,13 @@ define('INDEX_URL_GET_', '/projetos/innout/public/'); // com a barra no final
 define('INDEX_URL_GET', '/projetos/innout/public');
 
 // Pastas
+define('PATH', realpath(dirname(__FILE__, 3)));
 define('MODEL_PATH', realpath(dirname(__FILE__) . '/../models'));
 define('VIEW_PATH', realpath(dirname(__FILE__) . '/../views'));
 define('TEMPLATE_PATH', realpath(dirname(__FILE__) . '/../views/templates'));
 define('CONTROLLER_PATH', realpath(dirname(__FILE__) . '/../controllers'));
 define('APP_EXCEPTION_PATH', realpath(dirname(__FILE__) . '/../exceptions'));
+define('VENDOR_PATH', realpath(dirname(__FILE__) . '/../vendor'));
 define('PUBLIC_PATH', realpath(dirname(__FILE__, 3) . '/public'));
 
 
@@ -30,4 +32,5 @@ require_once (MODEL_PATH . '/user.php');
 require_once (MODEL_PATH . '/workingHours.php');
 require_once (APP_EXCEPTION_PATH . '/appException.php');
 require_once (APP_EXCEPTION_PATH . '/validationException.php');
+require_once(realpath(dirname(__FILE__) . '/logger.php'));
 

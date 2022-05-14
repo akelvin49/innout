@@ -26,6 +26,9 @@ class Login extends Model {
                 if($user->end_date){
                     throw new AppException('Usuário está desligado da empresa.');
                 }
+                $user->password = null;
+                $this->password = null;
+                logger("Login de Usuário: '{$user->name}', Email: '{$user->email}'");
                 return $user;
             }
         }
