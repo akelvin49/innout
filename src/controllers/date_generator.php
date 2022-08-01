@@ -3,7 +3,7 @@ session_start();
 requireValidSession();
 
 Database::executeSql('DELETE FROM working_hours');
-Database::executeSql('DELETE FROM users WHERE id > 6');
+// Database::executeSql('DELETE FROM users WHERE id > 6');
 
 function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate) {
 
