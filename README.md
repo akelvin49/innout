@@ -1,8 +1,12 @@
 # Projeto In N' Out.
 
-[<img src = "https://img.shields.io/badge/@akelvinlima-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/akelvinlima/)
-[<img src="https://img.shields.io/badge/Kelvin_Lima-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/kelvin-lima-89074a1ab/)
+![GitHub repo size](https://img.shields.io/github/repo-size/akelvin49/innout)
+[<img src = "https://img.shields.io/badge/akelvinlima-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white">](https://www.instagram.com/akelvinlima/)
+[<img src="https://img.shields.io/badge/Kelvin_Lima-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/kelvin-lima-89074a1ab/)
 [![Source Code](http://img.shields.io/badge/source-akelvin49/Innout-blue.svg?style=flat-square)](https://github.com/akelvin49/Innout)
+![GitHub language count](https://img.shields.io/github/languages/count/akelvin49/innout)
+![GitHub top language](https://img.shields.io/github/languages/top/akelvin49/innout)
+
 
 
 ## :pushpin: Sobre
